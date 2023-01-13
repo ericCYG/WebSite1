@@ -1,0 +1,109 @@
+﻿
+body {
+    /*margin: 0;*/
+    background: #222222;
+    /*font-family: 'Raleway', Arial, sans-serif;*/
+    font-family: 微軟正黑體;
+    padding-top: 70px;
+    /*padding-bottom:250px;*/
+}
+
+/*.toggle-button {
+    margin: 0 20px;
+}*/ /*只有toggle用這個可以調*/
+.toggle-button {
+    /*position: relative;*/
+    /*display: inline-block;*/
+    color: #fff;    /*內字的顏色*/
+   
+}
+
+    .toggle-button label {
+        /*display: inline-block;*/   /*小心1*/
+        /*text-transform: uppercase;*/
+        /*cursor: pointer;*/
+        text-align:center;
+    }
+
+    .toggle-button input {
+        display: none;
+    }       /*關掉勾勾*/
+
+    /*---------------------------------------------------------------*/
+.toggle-button--aava label {
+   height:30px;
+    
+  
+    transition: all 0.2s;
+    border-radius: 0.5rem;
+}
+/*本體顯示*/
+
+    .toggle-button--aava label:before, .toggle-button--aava label:after {
+        /*position: absolute;*/ /*不顯示煩人的東西*/
+        /*left: 1.5rem;*/   /*調整我要的東西*/        /*這兩個都要在*/
+        /*transition: all 0.2s .1s*/ /*ease-out;*/
+    }
+
+    /*.toggle-button--aava label:before {
+        content: attr(data-on-text);
+       
+    }*/
+    /*預設是沒字開了才會有字：這是按之前的狀態*/
+    /*.toggle-button--aava label:after {
+        content: attr(data-off-text);
+    }*/
+/*預設是沒字開了才會有字：這是按之後的狀態*/
+.toggle-button--aava input[type=checkbox] + label {
+    width: 70px;
+    background: #808080;
+}
+/*本體顯示一開始的的顏色與大小*/
+
+
+.toggle-button--aava input[type=checkbox]:checked ~ label {
+    width: 90px;
+    background: #00b00e;
+}
+    /*本體顯示按下去的顏色與大小*/
+  
+/*------------------------------------------------------------------------------------------*/
+
+
+    /*radioButton*/
+
+.join-btn {
+    display: none; /*關掉勾勾*/
+    /*position: absolute;
+            clip: rect(0, 0, 0, 0);
+            pointer-events: auto;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    /*卡片樣式*/
+
+
+img {
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    margin-bottom: 20px;
+}
+
+    img:hover {
+        filter: none; /* IE6-9 */
+        -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+    }
+   
